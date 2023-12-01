@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de ratios</title>
+</head>
+<body>
+    <form action="/procesar" method="GET">
+        <label for="ratio">Selecciona un ratio:</label>
+        <select id="ratio" name="ratio">
+            <option value="yape">Pago</option>
+            <option value="contacto">Solicitud</option>
+        </select><br><br>
+
+        <label for="valor">Numero:</label>
+        <input type="text" id="valor" name="valor"><br><br>
+        <label for="valor">Pago:</label>
+        <input type="text" id="dinero" name="dinero"><br><br>
+        <label for="valor">Destino:</label>
+        <input type="text" id="Destino" name="destino"><br><br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

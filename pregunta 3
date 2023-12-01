@@ -1,0 +1,22 @@
+3) Cambios en el código:
+Clases/Métodos: Podrías introducir una nueva validación de límite de transferencia en los métodos pagary y encontrar_propietario para verificar si el monto de transferencia excede los 200 soles diarios.
+
+Nuevos casos de prueba: Se deben añadir casos de prueba que verifiquen la funcionalidad de la limitación del monto máximo diario de transferencia. Esto incluiría casos de prueba con transferencias que excedan y estén dentro del límite de 200 soles.
+
+Riesgo de "romper" la funcionalidad existente:
+El riesgo de romper la funcionalidad existente depende de la implementación de los cambios. Si se realizan modificaciones adecuadas y se prueban de manera exhaustiva, se puede minimizar el riesgo. Sin embargo, al introducir cambios en métodos existentes, siempre existe cierto riesgo potencial de errores o efectos no deseados en el código existente.
+
+posible identificador
+def pagary(valor, money):
+    # Verificar si el monto de transferencia excede los 200 soles
+    if money > 200:
+        raise ValueError("El monto de transferencia excede el límite diario de 200 soles")
+    else:
+        # Resto del código para realizar la transferencia
+        pass
+
+def encontrar_propietario(valor):
+    # No se realiza ninguna transferencia aquí, solo se busca al propietario
+    pass
+
+https://github.com/Sael-init/final.git
